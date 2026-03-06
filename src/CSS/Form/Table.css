@@ -1,0 +1,132 @@
+.table-container {
+  width: 100%;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  overflow-x: auto;
+}
+
+.student {
+  margin-bottom: 20px;
+  color: #222;
+  font-size: 24px;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.search-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-dropdown {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+  font-size: 14px;
+}
+
+.filter-dropdown:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.search-box {
+  padding: 8px 12px;
+  min-width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s ease;
+  font-size: 14px;
+}
+
+.search-box:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.student-table th {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.student-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.student-table tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+.student-table tfoot td {
+  text-align: center;
+  font-weight: bold;
+  background-color: #f8f9fa;
+  padding: 12px;
+}
+
+@media (max-width: 1200px) {
+  .table-container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .student {
+    font-size: 20px;
+  }
+  
+  .search-group {
+    width: 100%;
+  }
+  
+  .filter-dropdown,
+  .search-box {
+    width: 100%;
+  }
+  
+  .table-container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .student {
+    font-size: 18px;
+  }
+  
+  .student-table th,
+  .student-table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
