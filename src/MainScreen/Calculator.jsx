@@ -13,7 +13,11 @@ const [age,setAge]= useState(21);
   };
 
   const clear = () => {
+<<<<<<< HEAD
     setInput("");
+=======
+    setInput("0");
+>>>>>>> 41da599aaa11cd899f9be601cff5fd6e1bc93759
   };
 
   const calculate = () => {
